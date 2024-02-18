@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borboletas</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            color: #333;
+            padding-top: 60px;
+        }
+        .jumbotron {
+            background-image: url('https://source.unsplash.com/random/1600x900/?butterfly');
+            background-size: cover;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+        }
+        .card-img-top {
+            height: 200px;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Borboletas</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Início</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sobre</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container text-center">
+            <h1 class="display-4">Bem-vindo ao Mundo das Borboletas</h1>
+            <p class="lead">Descubra a beleza e a diversidade das borboletas.</p>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://source.unsplash.com/300x200/?butterfly" class="card-img-top" alt="Borboleta">
+                    <div class="card-body">
+                        <h5 class="card-title">Borboleta Azul</h5>
+                        <p class="card-text">Aprenda sobre a borboleta azul e suas características.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://source.unsplash.com/300x200/?butterflies" class="card-img-top" alt="Borboletas">
+                    <div class="card-body">
+                        <h5 class="card-title">Borboletas Coloridas</h5>
+                        <p class="card-text">Descubra a diversidade de cores das borboletas.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <img src="https://source.unsplash.com/300x200/?insect" class="card-img-top" alt="Inseto">
+                    <div class="card-body">
+                        <h5 class="card-title">Borboletas vs. Insetos</h5>
+                        <p class="card-text">Conheça as diferenças entre borboletas e outros insetos.</p>
+                        <a href="#" class="btn btn-primary">Saiba mais</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="bg-dark text-light py-3">
+        <div class="container text-center">
+            <p>&copy; <span id="currentYear"></span> Borboletas Inc. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <script>
+        document.getElementById('currentYear').innerText = new Date().getFullYear();
+    </script>
+</body>
+</html>
